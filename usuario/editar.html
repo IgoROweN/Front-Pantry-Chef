@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../assets/style/editar.css">
+    <script src="https://kit.fontawesome.com/26c01c2bcf.js" crossorigin="anonymous"></script>
+    <title>PantryChef Editar</title>
+</head>
+<body>
+    <nav class="d-flex justify-content-between align-items-center p-3">
+        <div class="navbutton"><a href="/" class="text-light"><i class="fas fa-arrow-left"></i></a></div>
+        <div class="navbutton"><a href="/" class="text-light"><i class="fas fa-book"></i></a></div> 
+        <div class="navbutton"><a href="/" class="text-light"><i class="fas fa-circle-plus"></i></a></div> 
+        <div class="navbutton"><a href="/" class="text-light"><i class="fas fa-utensils"></i></a></div>
+        <div class="navbutton rounded-circle">
+            <a href="./../usuario/index.html" class="d-flex justify-content-center align-items-center text-light">
+                <img src="./../assets/img/lance-reis-tyec1pFjaGU-unsplash.jpg" height="45px" width="45px" alt="" class="rounded-circle">
+            </a>
+        </div>
+    </nav>
+    <section class="main-section">
+        <div class="card">
+            <h3>Editar Perfil</h3>
+            <form id="editProfileForm" onsubmit="submitForm(event)">
+                <!-- Campos de edição de perfil aqui -->
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="fone">Telefone:</label>
+                    <input type="tel" id="fone" name="fone" required>
+                </div>
+                <div>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+                <!-- Botão de enviar o formulário -->
+                <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Aqui você irá adicionar a lógica para enviar os dados do formulário
+            // Por exemplo, usando fetch() ou axios para enviar uma requisição ao servidor
+
+            // Simulando um envio bem-sucedido (você precisa substituir isso pelo seu código real)
+            setTimeout(() => {
+                alert('Perfil atualizado com sucesso!');
+                // Redirecionando de volta à página anterior
+                window.history.back();
+            }, 1000); // Tempo de simulação de envio (1 segundo)
+        }
+    </script>
+<script src="seu-script-javascript.js"></script>
+</body>
+</html>
