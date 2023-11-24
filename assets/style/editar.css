@@ -24,7 +24,7 @@ nav {
 
 .card {
     background-color: #FF9200;
-    height: 80%;
+    height: 63%;
     width: 70%;
     gap: 2%;
     border-radius: 16px;
@@ -44,9 +44,13 @@ label {
 }
 
 input {
+    width: 100;
+    padding: 12px;
+    margin-bottom: 5%;
+}
+
+div{
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
 }
 
 button {
